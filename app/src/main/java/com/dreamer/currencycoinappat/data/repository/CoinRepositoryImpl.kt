@@ -1,9 +1,9 @@
-package com.plcoding.cryptocurrencyappyt.data.repository
+package com.dreamer.currencycoinappat.data.repository
 
-import com.plcoding.cryptocurrencyappyt.data.remote.CoinPaprikaApi
-import com.plcoding.cryptocurrencyappyt.data.remote.dto.CoinDetailDto
-import com.plcoding.cryptocurrencyappyt.data.remote.dto.CoinDto
-import com.plcoding.cryptocurrencyappyt.domain.repository.CoinRepository
+import com.dreamer.currencycoinappat.data.remote.CoinPaprikaApi
+import com.dreamer.currencycoinappat.data.remote.dto.CoinDetailDto
+import com.dreamer.currencycoinappat.data.remote.dto.CoinDto
+import com.dreamer.currencycoinappat.domain.repository.CoinRepository
 import javax.inject.Inject
 
 class CoinRepositoryImpl @Inject constructor(

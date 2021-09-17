@@ -1,4 +1,4 @@
-package com.dreamer.currencycoinappat.ui.theme
+package com.dreamer.currencycoinappat.presentation.ui.theme
 
 import androidx.compose.material.Typography
 import androidx.compose.ui.text.TextStyle

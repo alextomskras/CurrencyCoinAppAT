@@ -1,4 +1,4 @@
-package com.dreamer.currencycoinappat.ui.theme
+package com.dreamer.currencycoinappat.presentation.ui.theme
 
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.Shapes
