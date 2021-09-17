@@ -18,6 +18,7 @@ import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
 import com.dreamer.currencycoinappat.presentation.coin_detail.components.CoinTag
 import com.dreamer.currencycoinappat.presentation.coin_detail.components.TeamListItem
+import com.dreamer.currencycoinappat.presentation.ui.theme.ColorPrimary
 import com.google.accompanist.flowlayout.FlowRow
 
 @Composable
@@ -43,7 +44,7 @@ fun CoinDetailScreen(
                         )
                         Text(
                             text = if (coin.isActive) "active" else "inactive",
-                            color = if (coin.isActive) Color.Green else Color.Red,
+                            color = if (coin.isActive) ColorPrimary else Color.Red,
                             fontStyle = FontStyle.Italic,
                             textAlign = TextAlign.End,
                             modifier = Modifier

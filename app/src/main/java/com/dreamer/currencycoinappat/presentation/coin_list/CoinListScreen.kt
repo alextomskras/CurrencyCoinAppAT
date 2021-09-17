@@ -19,6 +19,7 @@ import androidx.navigation.NavController
 import com.dreamer.currencycoinappat.presentation.Screen
 import com.dreamer.currencycoinappat.presentation.coin_list.components.CoinListItem
 
+
 @Composable
 fun CoinListScreen(
     navController: NavController,

@@ -22,7 +22,7 @@ val Typography = Typography(
     ),
     h4 = TextStyle(
         fontWeight = FontWeight.Medium,
-        fontSize = 16.sp
+        fontSize = 18.sp
     ),
     body1 = TextStyle(
         fontFamily = FontFamily.Default,

@@ -12,10 +12,12 @@ import androidx.compose.ui.Alignment.Companion.CenterVertically
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.font.FontStyle
+import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
 import com.dreamer.currencycoinappat.domain.model.Coin
+import com.dreamer.currencycoinappat.presentation.ui.theme.ColorPrimary
 
 @Composable
 fun CoinListItem(
@@ -36,8 +38,9 @@ fun CoinListItem(
         )
         Text(
             text = if (coin.isActive) "active" else "inactive",
-            color = if (coin.isActive) Color.Green else Color.Red,
+            color = if (coin.isActive) ColorPrimary else Color.Red,
             fontStyle = FontStyle.Italic,
+            fontWeight = FontWeight.Bold,
             textAlign = TextAlign.End,
             style = MaterialTheme.typography.body2,
             modifier = Modifier.align(CenterVertically)

@@ -13,6 +13,7 @@ import androidx.compose.ui.unit.dp
 import com.dreamer.currencycoinappat.data.remote.dto.TeamMember
 
 @Composable
+
 fun TeamListItem(
     teamMember: TeamMember,
     modifier: Modifier = Modifier
