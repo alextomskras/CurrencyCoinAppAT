@@ -2,6 +2,7 @@ package com.dreamer.currencycoinappat.domain.repository
 
 import com.dreamer.currencycoinappat.data.remote.dto.CoinDetailDto
 import com.dreamer.currencycoinappat.data.remote.dto.CoinDto
+import com.dreamer.currencycoinappat.data.remote.dto.CoinTickersDto
 
 //import com.dreamer.currencycoinappat.domain.model.Coin
 //import com.dreamer.currencycoinappat.domain.model.CoinDetail
@@ -13,4 +14,6 @@ interface CoinRepository {
 
     suspend fun getCoinById(coinId: String): CoinDetailDto
 //    suspend fun getCoinById(coinId: String): CoinDetail
+
+    suspend fun getCoinsTickers(): CoinTickersDto
 }
