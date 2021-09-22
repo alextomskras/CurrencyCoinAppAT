@@ -2,6 +2,7 @@ package com.dreamer.currencycoinappat.domain.model
 
 import com.dreamer.currencycoinappat.data.remote.dto.TeamMember
 
+
 data class CoinDetail(
     val coinId: String,
     val name: String,

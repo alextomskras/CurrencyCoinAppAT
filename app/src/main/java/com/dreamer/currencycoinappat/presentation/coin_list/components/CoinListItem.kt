@@ -16,13 +16,12 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
-import com.dreamer.currencycoinappat.domain.model.Coin
 import com.dreamer.currencycoinappat.presentation.ui.theme.ColorPrimary
 
 @Composable
 fun CoinListItem(
-    coin: Coin,
-    onItemClick: (Coin) -> Unit
+    coin: com.dreamer.currencycoinappat.domain.model.Coin,
+    onItemClick: (com.dreamer.currencycoinappat.domain.model.Coin) -> Unit
 ) {
     Row(
         modifier = Modifier

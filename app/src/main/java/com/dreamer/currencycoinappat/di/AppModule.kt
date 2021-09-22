@@ -1,9 +1,6 @@
 package com.dreamer.currencycoinappat.di
 
 import com.dreamer.currencycoinappat.common.Constants
-import com.dreamer.currencycoinappat.data.remote.CoinPaprikaApi
-import com.dreamer.currencycoinappat.data.repository.CoinRepositoryImpl
-import com.dreamer.currencycoinappat.domain.repository.CoinRepository
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
@@ -18,17 +15,17 @@ object AppModule {
 
     @Provides
     @Singleton
-    fun providePaprikaApi(): CoinPaprikaApi {
+    fun providePaprikaApi(): com.dreamer.currencycoinappat.data.remote.CoinPaprikaApi {
         return Retrofit.Builder()
             .baseUrl(Constants.BASE_URL)
             .addConverterFactory(GsonConverterFactory.create())
             .build()
-            .create(CoinPaprikaApi::class.java)
+            .create(com.dreamer.currencycoinappat.data.remote.CoinPaprikaApi::class.java)
     }
 
     @Provides
     @Singleton
-    fun provideCoinRepository(api: CoinPaprikaApi): CoinRepository {
-        return CoinRepositoryImpl(api)
+    fun provideCoinRepository(api: com.dreamer.currencycoinappat.data.remote.CoinPaprikaApi): com.dreamer.currencycoinappat.domain.repository.CoinRepository {
+        return com.dreamer.currencycoinappat.data.repository.CoinRepositoryImpl(api)
     }
 }

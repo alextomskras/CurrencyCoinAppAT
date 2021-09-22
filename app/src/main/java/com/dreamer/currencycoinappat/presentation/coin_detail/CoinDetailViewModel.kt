@@ -7,7 +7,6 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.dreamer.currencycoinappat.common.Constants
 import com.dreamer.currencycoinappat.common.Resource
-import com.dreamer.currencycoinappat.domain.use_case.get_coin.GetCoinUseCase
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.launchIn
 import kotlinx.coroutines.flow.onEach
@@ -15,7 +14,7 @@ import javax.inject.Inject
 
 @HiltViewModel
 class CoinDetailViewModel @Inject constructor(
-    private val getCoinUseCase: GetCoinUseCase,
+    private val getCoinUseCase: com.dreamer.currencycoinappat.domain.use_case.get_coin.GetCoinUseCase,
     savedStateHandle: SavedStateHandle
 ) : ViewModel() {
 

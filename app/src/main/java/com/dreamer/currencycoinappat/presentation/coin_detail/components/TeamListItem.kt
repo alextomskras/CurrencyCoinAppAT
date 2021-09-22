@@ -10,12 +10,11 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.text.font.FontStyle
 import androidx.compose.ui.unit.dp
-import com.dreamer.currencycoinappat.data.remote.dto.TeamMember
 
 @Composable
 
 fun TeamListItem(
-    teamMember: TeamMember,
+    teamMember: com.dreamer.currencycoinappat.data.remote.dto.TeamMember,
     modifier: Modifier = Modifier
 ) {
     Column(

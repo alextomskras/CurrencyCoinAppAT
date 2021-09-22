@@ -12,4 +12,8 @@ interface CoinPaprikaApi {
 
     @GET("/v1/coins/{coinId}")
     suspend fun getCoinById(@Path("coinId") coinId: String): CoinDetailDto
+
+    //https://api.coinpaprika.com/v1/tickers
+    @GET("/v1/tickers")
+    suspend fun getCoinsTickers(): List<CoinDto>
 }
