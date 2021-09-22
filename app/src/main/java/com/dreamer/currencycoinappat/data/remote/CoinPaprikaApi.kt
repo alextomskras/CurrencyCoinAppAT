@@ -16,5 +16,5 @@ interface CoinPaprikaApi {
 
     //https://api.coinpaprika.com/v1/tickers
     @GET("/v1/tickers")
-    suspend fun getCoinsTickers(): List<CoinTickersDto>
+    suspend fun getCoinsTickers(): CoinTickersDto
 }
