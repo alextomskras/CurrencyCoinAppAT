@@ -5,5 +5,5 @@ import com.google.gson.annotations.SerializedName
 
 data class Quotes(
     @SerializedName("USD")
-    val uSD: tickersUSD
+    val uSD: TickersUSD
 )

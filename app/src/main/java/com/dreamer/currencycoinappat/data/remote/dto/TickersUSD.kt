@@ -4,7 +4,7 @@ package com.dreamer.currencycoinappat.data.remote.dto
 import com.dreamer.currencycoinappat.domain.model.USD
 import com.google.gson.annotations.SerializedName
 
-data class tickersUSD(
+data class TickersUSD(
     val price: Double, // 43386.809879257
     @SerializedName("volume_24h")
     val volume24h: Double, // 49221463388.984
@@ -40,7 +40,7 @@ data class tickersUSD(
     val percentFromPriceAth: Double // -33.33
 )
 
-fun tickersUSD.toUSD(): USD {
+fun TickersUSD.toUSD(): USD {
     return USD(
         price = price,
 
